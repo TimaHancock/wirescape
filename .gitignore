@@ -1,0 +1,28 @@
+# Captures — never commit real traffic
+*.pcap
+*.pcapng
+*.cap
+!samples/*.pcap
+!samples/*.pcapng
+
+# Logs and local config
+*.log
+config.local.*
+
+# Build output (covers the likely stacks in ADR-0002)
+target/
+bin/
+obj/
+dist/
+build/
+__pycache__/
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
